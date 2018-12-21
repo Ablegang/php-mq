@@ -7,13 +7,13 @@
 
 # 使用
 
-1、运行sql
-2、修改config.php
-3、启动生产者
+1、运行sql  
+2、修改config.php  
+3、启动生产者  
 ```
 php producer.php
 ```
-4、启动消费者
+4、启动消费者  
 ```
 php consumer.php
 ```
