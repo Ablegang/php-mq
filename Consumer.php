@@ -22,7 +22,7 @@ try {
     ]);
 
     while (1) {
-
+        // 死循环，使进程一直在cli中运行，不断从消息队列读取数据
         $job = Queue::reserve('test');
         if (!$job->isEmpty()) {
             echo $job->job_data . PHP_EOL;
