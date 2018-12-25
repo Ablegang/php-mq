@@ -13,7 +13,13 @@ include_once 'boot.php';
 
 try {
 
-    Queue::init(); // 队列初始化
+    Queue::init('mysql', [
+        'dsn' => 'mysql:host=mysql;dbname=test',
+        'username' => 'root',
+        'password' => 'root',
+        'table' => 'queues',
+        'ttr' => 60,
+    ]); // 队列初始化
 
     // 生产者放入消息
 

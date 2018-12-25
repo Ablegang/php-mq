@@ -23,14 +23,10 @@ class Mysql implements QueueI
     private $update_suffix;
     private $insert_suffix;
 
-    public function __construct()
+    public function __construct($options = [])
     {
-        $config_path = ROOT . '/config.php';
-        if (!file_exists($config_path)) {
-            throw new \Exception('配置文件不存在：' . $config_Path);
-        }
 
-        $this->config = (include_once $config_path)['mysql'];
+        $this->config = $options;
 
         $this->conn = new \PDO(
             $this->config['dsn'],

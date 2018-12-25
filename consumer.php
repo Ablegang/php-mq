@@ -13,7 +13,13 @@ include_once 'boot.php';
 
 try {
 
-    Queue::init();
+    Queue::init('mysql', [
+        'dsn' => 'mysql:host=mysql;dbname=test',
+        'username' => 'root',
+        'password' => 'root',
+        'table' => 'queues',
+        'ttr' => 60,
+    ]);
 
     while (1) {
 

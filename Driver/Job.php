@@ -9,6 +9,8 @@
 // | Author: Object,半醒的狐狸<2252390865@qq.com>
 // +----------------------------------------------------------------------
 
+namespace Driver\Job;
+
 class Job
 {
     public $id = null;
