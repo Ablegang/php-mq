@@ -12,8 +12,6 @@
 namespace Ablegang\PhpMq;
 
 use Ablegang\PhpMq\Driver\Job;
-use Ablegang\PhpMq\Driver\MysqlDriver;
-use Ablegang\PhpMq\Driver\RedisDriver;
 
 class Queue
 {
@@ -26,7 +24,8 @@ class Queue
      */
     public static function init($driver = 'Mysql', $options = [])
     {
-        $class = "{$driver}Driver";
+        // 通过变量 new 对象，需写全命名空间
+        $class = "\Ablegang\PhpMq\Driver\\{$driver}Driver";
         self::$driver = new $class($options);
     }
 
