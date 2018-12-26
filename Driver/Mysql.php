@@ -11,17 +11,15 @@
 
 namespace Driver;
 
-use Job;
-
 class Mysql implements QueueI
 {
-    private $conn;
-    private $config;
-    private $table;
-    private $select_suffix;
-    private $delete_suffix;
-    private $update_suffix;
-    private $insert_suffix;
+    private $conn; // 数据库连接
+    private $config; // 配置
+    private $table; // 表
+    private $select_suffix; // 查询的前缀
+    private $delete_suffix; // 删除的前缀
+    private $update_suffix; // 更新的前缀
+    private $insert_suffix; // 插入的前缀
 
     public function __construct($options = [])
     {
@@ -73,7 +71,7 @@ class Mysql implements QueueI
             throw new \PDOException('查询错误：' . $sql . '-错误提示：' . json_encode($statement->errorInfo()));
         }
 
-        return $statement->fetchAll(\PDO::FETCH_ASSOC);
+        return Job::arr2job($statement->fetchAll(\PDO::FETCH_ASSOC));
     }
 
     public function put(Job $job): Job
@@ -131,6 +129,6 @@ class Mysql implements QueueI
             return $job;
         }
 
-        return new Job();
+        throw new \PDOException('无法fetch记录：' . $data);
     }
 }

@@ -9,7 +9,7 @@
 // | Author: Object,半醒的狐狸<2252390865@qq.com>
 // +----------------------------------------------------------------------
 
-namespace Driver\Job;
+namespace Driver;
 
 class Job
 {
@@ -33,6 +33,15 @@ class Job
     public static $field_string
         = 'id,tube,status,job_data,attempts,sort,' .
         'reserved_at,available_at,created_at';
+
+    public static function arr2job($job)
+    {
+        $real_jobs = [];
+        foreach ($jobs as $v) {
+            $real_jobs[] = new Job($v);
+        }
+        return $real_jobs;
+    }
 
     public function __construct(array $data = [])
     {
