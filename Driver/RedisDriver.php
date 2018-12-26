@@ -11,7 +11,7 @@
 
 namespace Driver;
 
-class Redis implements QueueI
+class RedisDriver implements QueueI
 {
 
     private $conn;
@@ -20,11 +20,12 @@ class Redis implements QueueI
 
     public function __construct($options = [])
     {
-        $this->conn = new \Redis($options['ip'], $options['port']);
-        if ($options['password']) {
+        $this->conn = new \Redis();
+        $this->conn->connect($options['ip'], $options['port']);
+        if (isset($options['password'])) {
             $this->conn->auth($options['password']);
         }
-        $this->tubes_key = $tubes;
+        $this->tubes_key = $options['tubes'];
     }
 
     public function tubes(): array
@@ -40,10 +41,12 @@ class Redis implements QueueI
 
     public function put(Job $job): Job
     {
+        // 维护 tube 集合，可实现不重复
+        $this->conn->zAdd($this->tubes_key, 1, $job->tube);
+
         // 用 list 存储队列内容，返回的队列长度，就是这个 job 在 list 中的下标
         if ($id = $this->conn->lPush($job->tube, json_encode($job))) {
             $job->id = $id;
-            $this->conn->zAdd($job->tube,1); // 维护 tube 集合，可实现不重复
         } else {
             throw new \RedisException('插入失败');
         }
@@ -59,7 +62,9 @@ class Redis implements QueueI
     public function reserve(string $tube): Job
     {
         // redis 的rPop在接收时就会将 job 从 list 中删除，所以，没有 reserve 状态
-        $job = json_decode($this->conn->rPop($tube));
-        return new Job($job);
+        if ($data = $this->conn->rPop($tube)) {
+            $job = json_decode($data, true);
+        }
+        return new Job($job ?? []);
     }
 }

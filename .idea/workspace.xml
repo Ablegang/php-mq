@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="360a2aed-43db-4bff-aa3c-a2165cac016c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/RedisConsumer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RedisProducer.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Consumer.php" afterPath="$PROJECT_DIR$/Consumer.php" />
       <change beforePath="$PROJECT_DIR$/Driver/Job.php" afterPath="$PROJECT_DIR$/Driver/Job.php" />
-      <change beforePath="$PROJECT_DIR$/Driver/Mysql.php" afterPath="$PROJECT_DIR$/Driver/Mysql.php" />
-      <change beforePath="$PROJECT_DIR$/Driver/Redis.php" afterPath="$PROJECT_DIR$/Driver/Redis.php" />
-      <change beforePath="$PROJECT_DIR$/queue.sql" afterPath="$PROJECT_DIR$/Driver/queue.sql" />
+      <change beforePath="$PROJECT_DIR$/Driver/Mysql.php" afterPath="$PROJECT_DIR$/Driver/MysqlDriver.php" />
+      <change beforePath="$PROJECT_DIR$/Driver/Redis.php" afterPath="$PROJECT_DIR$/Driver/RedisDriver.php" />
+      <change beforePath="$PROJECT_DIR$/Producer.php" afterPath="$PROJECT_DIR$/Producer.php" />
+      <change beforePath="$PROJECT_DIR$/Queue.php" afterPath="$PROJECT_DIR$/Queue.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +24,8 @@
       <file leaf-file-name="Job.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Driver/Job.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+            <state relative-caret-position="422">
+              <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
               <folding>
                 <element signature="e#6#80#0#PHP" expanded="true" />
               </folding>
@@ -29,34 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="queue.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driver/queue.sql">
+      <file leaf-file-name="RedisConsumer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RedisConsumer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Consumer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Consumer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="e#6#80#0#PHP" expanded="true" />
               </folding>
@@ -64,33 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueI.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Driver/QueueI.php">
+      <file leaf-file-name="RedisProducer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RedisProducer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-              <folding>
-                <element signature="e#6#80#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Redis.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Driver/Redis.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Producer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="441">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="e#6#80#0#PHP" expanded="true" />
               </folding>
@@ -120,16 +79,21 @@
         <option value="$PROJECT_DIR$/boot.php" />
         <option value="$PROJECT_DIR$/queue.sql" />
         <option value="$PROJECT_DIR$/Driver/QueueI.php" />
-        <option value="$PROJECT_DIR$/Queue.php" />
         <option value="$PROJECT_DIR$/Job.php" />
         <option value="$PROJECT_DIR$/consumer.php" />
         <option value="$PROJECT_DIR$/producer.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Consumer.php" />
         <option value="$PROJECT_DIR$/redis.php" />
-        <option value="$PROJECT_DIR$/Driver/Job.php" />
         <option value="$PROJECT_DIR$/Driver/Mysql.php" />
+        <option value="$PROJECT_DIR$/Consumer.php" />
         <option value="$PROJECT_DIR$/Driver/Redis.php" />
+        <option value="$PROJECT_DIR$/Queue.php" />
+        <option value="$PROJECT_DIR$/Producer.php" />
+        <option value="$PROJECT_DIR$/Driver/RedisDriver.php" />
+        <option value="$PROJECT_DIR$/Driver/MysqlDriver.php" />
+        <option value="$PROJECT_DIR$/RedisConsumer.php" />
+        <option value="$PROJECT_DIR$/Driver/Job.php" />
+        <option value="$PROJECT_DIR$/RedisProducer.php" />
       </list>
     </option>
   </component>
@@ -208,6 +172,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Driver" />
     </key>
@@ -240,12 +207,12 @@
       <workItem from="1545189311443" duration="18196000" />
       <workItem from="1545380909529" duration="5487000" />
       <workItem from="1545400311997" duration="6221000" />
-      <workItem from="1545792418374" duration="5223000" />
+      <workItem from="1545792418374" duration="7665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35127000" />
+    <option name="totallyTimeSpent" value="37569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -259,7 +226,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34787017" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38640973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -323,20 +290,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Mysql.php">
+    <entry file="file://$PROJECT_DIR$/Driver/MysqlDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3048">
           <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
-            <marker date="1545802709884" expanded="true" signature="1145:1173" ph="SELECT {Job:... " />
-            <marker date="1545802709884" expanded="true" signature="1222:1234" ph="DELETE FROM $... " />
-            <marker date="1545802709884" expanded="true" signature="1283:1304" ph="UPDATE $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1351" ph="INSERT INTO $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1365" ph="INSERT INTO " />
-            <marker date="1545802709884" expanded="true" signature="1432:1466" ph="SELECT `tube... " />
-            <marker date="1545802709884" expanded="true" signature="1432:1481" ph="SELECT `tube... $" />
-            <marker date="1545802709884" expanded="true" signature="1465:1466" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1151:1179" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1228:1240" ph="DELETE FROM $... " />
+            <marker date="1545806118845" expanded="true" signature="1289:1310" ph="UPDATE $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1357" ph="INSERT INTO $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1371" ph="INSERT INTO " />
+            <marker date="1545806118845" expanded="true" signature="1438:1472" ph="SELECT `tube... " />
+            <marker date="1545806118845" expanded="true" signature="1438:1487" ph="SELECT `tube... $" />
+            <marker date="1545806118845" expanded="true" signature="1471:1472" ph="SELECT {Job:... " />
           </folding>
         </state>
       </provider>
@@ -351,7 +318,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Redis.php">
+    <entry file="file://$PROJECT_DIR$/Driver/RedisDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
@@ -405,20 +372,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Mysql.php">
+    <entry file="file://$PROJECT_DIR$/Driver/MysqlDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
-            <marker date="1545802709884" expanded="true" signature="1145:1173" ph="SELECT {Job:... " />
-            <marker date="1545802709884" expanded="true" signature="1222:1234" ph="DELETE FROM $... " />
-            <marker date="1545802709884" expanded="true" signature="1283:1304" ph="UPDATE $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1351" ph="INSERT INTO $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1365" ph="INSERT INTO " />
-            <marker date="1545802709884" expanded="true" signature="1432:1466" ph="SELECT `tube... " />
-            <marker date="1545802709884" expanded="true" signature="1432:1481" ph="SELECT `tube... $" />
-            <marker date="1545802709884" expanded="true" signature="1465:1466" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1151:1179" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1228:1240" ph="DELETE FROM $... " />
+            <marker date="1545806118845" expanded="true" signature="1289:1310" ph="UPDATE $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1357" ph="INSERT INTO $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1371" ph="INSERT INTO " />
+            <marker date="1545806118845" expanded="true" signature="1438:1472" ph="SELECT `tube... " />
+            <marker date="1545806118845" expanded="true" signature="1438:1487" ph="SELECT `tube... $" />
+            <marker date="1545806118845" expanded="true" signature="1471:1472" ph="SELECT {Job:... " />
           </folding>
         </state>
       </provider>
@@ -433,7 +400,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Redis.php">
+    <entry file="file://$PROJECT_DIR$/Driver/RedisDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
@@ -488,20 +455,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Mysql.php">
+    <entry file="file://$PROJECT_DIR$/Driver/MysqlDriver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1992">
           <caret line="91" column="49" lean-forward="true" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
-            <marker date="1545802709884" expanded="true" signature="1145:1173" ph="SELECT {Job:... " />
-            <marker date="1545802709884" expanded="true" signature="1222:1234" ph="DELETE FROM $... " />
-            <marker date="1545802709884" expanded="true" signature="1283:1304" ph="UPDATE $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1351" ph="INSERT INTO $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1365" ph="INSERT INTO " />
-            <marker date="1545802709884" expanded="true" signature="1432:1466" ph="SELECT `tube... " />
-            <marker date="1545802709884" expanded="true" signature="1432:1481" ph="SELECT `tube... $" />
-            <marker date="1545802709884" expanded="true" signature="1465:1466" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1151:1179" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1228:1240" ph="DELETE FROM $... " />
+            <marker date="1545806118845" expanded="true" signature="1289:1310" ph="UPDATE $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1357" ph="INSERT INTO $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1371" ph="INSERT INTO " />
+            <marker date="1545806118845" expanded="true" signature="1438:1472" ph="SELECT `tube... " />
+            <marker date="1545806118845" expanded="true" signature="1438:1487" ph="SELECT `tube... $" />
+            <marker date="1545806118845" expanded="true" signature="1471:1472" ph="SELECT {Job:... " />
           </folding>
         </state>
       </provider>
@@ -524,68 +491,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boot.php">
+    <entry file="file://$PROJECT_DIR$/redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/queue.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="144">
+          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Producer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Job.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#80#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,55 +510,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Mysql.php">
+    <entry file="file://$PROJECT_DIR$/Driver/queue.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="118" column="42" lean-forward="true" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
+        <state relative-caret-position="192">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/redis/Redis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
-            <marker date="1545802709884" expanded="true" signature="1145:1173" ph="SELECT {Job:... " />
-            <marker date="1545802709884" expanded="true" signature="1222:1234" ph="DELETE FROM $... " />
-            <marker date="1545802709884" expanded="true" signature="1283:1304" ph="UPDATE $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1351" ph="INSERT INTO $... " />
-            <marker date="1545802709884" expanded="true" signature="1339:1365" ph="INSERT INTO " />
-            <marker date="1545802709884" expanded="true" signature="1432:1466" ph="SELECT `tube... " />
-            <marker date="1545802709884" expanded="true" signature="1432:1481" ph="SELECT `tube... $" />
-            <marker date="1545802709884" expanded="true" signature="1465:1466" ph="SELECT {Job:... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driver/RedisDriver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="67" column="35" lean-forward="true" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Driver/MysqlDriver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+            <marker date="1545806118845" expanded="true" signature="1151:1179" ph="SELECT {Job:... " />
+            <marker date="1545806118845" expanded="true" signature="1228:1240" ph="DELETE FROM $... " />
+            <marker date="1545806118845" expanded="true" signature="1289:1310" ph="UPDATE $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1357" ph="INSERT INTO $... " />
+            <marker date="1545806118845" expanded="true" signature="1345:1371" ph="INSERT INTO " />
+            <marker date="1545806118845" expanded="true" signature="1438:1472" ph="SELECT `tube... " />
+            <marker date="1545806118845" expanded="true" signature="1438:1487" ph="SELECT `tube... $" />
+            <marker date="1545806118845" expanded="true" signature="1471:1472" ph="SELECT {Job:... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Consumer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="165">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="e#6#80#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis.php">
+    <entry file="file://$PROJECT_DIR$/Driver/Job.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="422">
+          <caret line="59" column="46" lean-forward="true" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/redis/Redis.php">
+    <entry file="file://$PROJECT_DIR$/RedisConsumer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="2305" column="80" lean-forward="true" selection-start-line="2305" selection-start-column="80" selection-end-line="2305" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Driver/Redis.php">
+    <entry file="file://$PROJECT_DIR$/Producer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="45" column="62" lean-forward="false" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="154">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedisProducer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

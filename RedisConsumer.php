@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------
-// | consumer.php
+// | RedisConsumer.php
 // +----------------------------------------------------------------------
 // | Description: 消费者
 // +----------------------------------------------------------------------
@@ -13,17 +13,15 @@ include_once 'boot.php';
 
 try {
 
-    Queue::init('Mysql', [
-        'dsn' => 'mysql:host=mysql;dbname=test',
-        'username' => 'root',
-        'password' => 'root',
-        'table' => 'queues',
-        'ttr' => 60,
-    ]);
+    Queue::init('Redis', [
+        'ip' => 'redis',
+        'port' => 6379,
+        'tubes' => 'tubes'
+    ]); // 队列初始化
 
     while (1) {
         // 死循环，使进程一直在cli中运行，不断从消息队列读取数据
-        $job = Queue::reserve('test');
+        $job = Queue::reserve('default');
         if (!$job->isEmpty()) {
             echo $job->job_data . PHP_EOL;
             sleep(2);

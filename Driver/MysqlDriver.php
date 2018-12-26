@@ -11,7 +11,7 @@
 
 namespace Driver;
 
-class Mysql implements QueueI
+class MysqlDriver implements QueueI
 {
     private $conn; // 数据库连接
     private $config; // 配置
@@ -129,6 +129,6 @@ class Mysql implements QueueI
             return $job;
         }
 
-        throw new \PDOException('无法fetch记录：' . $data);
+        return new Job();
     }
 }

@@ -34,10 +34,13 @@ class Job
         = 'id,tube,status,job_data,attempts,sort,' .
         'reserved_at,available_at,created_at';
 
-    public static function arr2job($job)
+    public static function arr2job($jobs)
     {
         $real_jobs = [];
         foreach ($jobs as $v) {
+            if (!is_array($v)) {
+                $v = json_decode($v, true);
+            }
             $real_jobs[] = new Job($v);
         }
         return $real_jobs;
@@ -54,6 +57,6 @@ class Job
 
     public function isEmpty()
     {
-        return $this->id ? false : true;
+        return $this->job_data ? false : true;
     }
 }

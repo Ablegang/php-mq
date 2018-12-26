@@ -9,17 +9,20 @@
 // | Author: Object,半醒的狐狸<2252390865@qq.com>
 // +----------------------------------------------------------------------
 
+use Driver\Job;
+
 class Queue
 {
+    public static $driver = null;
 
     /**
      * @param string $driver
      * @param array $options
      * 初始化
      */
-    public static function init($driver = 'Mysql',$options = [])
+    public static function init($driver = 'Mysql', $options = [])
     {
-        $class = "Driver\\$driver";
+        $class = "Driver\\{$driver}Driver";
         self::$driver = new $class($options);
     }
 
