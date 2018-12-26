@@ -1,0 +1,27 @@
+{
+  "name": "php-mq",
+  "description": "PHP 模拟消息队列包",
+  "keywords": [
+    "object",
+    "半醒的狐狸",
+    "php message queue",
+    "php 消息队列"
+  ],
+  "license": "MIT",
+  "author": [
+    {
+      "name": "半醒的狐狸",
+      "email": "2252390865@qq.com",
+      "homepage": "http://www.vsonweb.com",
+      "role": "Master"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ablegang\\PhpMq\\": "src/"
+    }
+  }
+}
