@@ -1,5 +1,5 @@
 {
-  "name": "php-mq-demo",
+  "name": "Ablegang/php-mq",
   "description": "PHP 模拟消息队列包",
   "keywords": [
     "object",
