@@ -1,6 +1,6 @@
 <?php
 // +----------------------------------------------------------------------
-// | RedisProducer.php
+// | Producer.php
 // +----------------------------------------------------------------------
 // | Description: 生产者
 // +----------------------------------------------------------------------
@@ -13,20 +13,22 @@ include_once 'boot.php';
 
 try {
 
-    Queue::init('Redis', [
-        'ip' => 'redis',
-        'port' => 6379,
-        'tubes' => 'tubes'
+    \Ablegang\PhpMq\Queue::init('Mysql', [
+        'dsn' => 'mysql:host=mysql;dbname=test',
+        'username' => 'root',
+        'password' => 'root',
+        'table' => 'queues',
+        'ttr' => 60,
     ]); // 队列初始化
 
     // 生产者放入消息
-    $job = new Driver\Job([
-        'job_data' => json_encode(['order_id' => time(), 'user_id' => '0001']),
-        'tube' => 'default'
-    ]);
-    $job = Queue::put($job);
-    echo $job->id . PHP_EOL;
 
-} catch (Exception $e) {
+    $job = new \Ablegang\PhpMq\Driver\Job([
+        'job_data' => json_encode(['order_id' => time(), 'user_id' => 0001]),
+        'tube' => 'test'
+    ]);
+    $job = \Ablegang\PhpMq\Queue::put($job);
+
+} catch (\Exception $e) {
     var_dump($e->getMessage());
 }

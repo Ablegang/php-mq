@@ -9,7 +9,11 @@
 // | Author: Object,半醒的狐狸<2252390865@qq.com>
 // +----------------------------------------------------------------------
 
-use Driver\Job;
+namespace Ablegang\PhpMq;
+
+use Ablegang\PhpMq\Driver\Job;
+use Ablegang\PhpMq\Driver\MysqlDriver;
+use Ablegang\PhpMq\Driver\RedisDriver;
 
 class Queue
 {
@@ -22,7 +26,7 @@ class Queue
      */
     public static function init($driver = 'Mysql', $options = [])
     {
-        $class = "Driver\\{$driver}Driver";
+        $class = "{$driver}Driver";
         self::$driver = new $class($options);
     }
 
